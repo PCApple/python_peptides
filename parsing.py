@@ -1,5 +1,5 @@
 
-f=open(r'D:/Refdata/All.txt', "r")
+f=open(r'F:/refdata/ref.txt', "r")
 rawdata=[]
 count = 0
 pod1 = False
@@ -31,6 +31,8 @@ while blankcount <1000:
         location=''
         entrez_id=''
         mol_type = ''
+        start= ''
+        end = ''
         while X==False:
             if gene=='':
                 if '/gene=' in x:
